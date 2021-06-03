@@ -18,15 +18,15 @@ Your project goal is to operationalize this working, machine learning microservi
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
-
----
-
 ## Setup the Environment
 
 * Create a virtualenv and activate it
+
+```sh
+python3 -m venv ~/.devops
+source ~/.devops/bin/activate
+```
+
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
@@ -34,6 +34,11 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+4. Make predictions seperate terminal:  `./make_prediction.sh`
+
+### Docker
+
+ Publish docker image: `./upload_docker.sh`
 
 ### Kubernetes Steps
 
@@ -42,4 +47,18 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Create Flask app in Container
 * Run via kubectl
 
+### Files includes:
 
+* `.circleci` - circleci config scripts
+* `model_data` - ML model related data (model, csv data)
+* `output_txt_files` - project output files (docker, kubernetes)
+    * `docker_out.txt` - run_docker.sh output
+    * `kubernetes_out.txt` - run_kubernetes.sh output
+* `app.py` - python web application entry point file
+* `Dickerfile` - docker image config
+* `make_prediction.sh` - make prediction HTTP call script
+* `Makefile` - make file (install, test, lint steps)
+* `requirements.txt` - web application dependencies (python, libraries)
+* `run_docker.sh` - run docker container script
+* `run_kubernetes.sh` - run kubernetes pod for the web app script
+* `upload_docker.sh` - upload docker image to dicker hub script
