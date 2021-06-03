@@ -1,5 +1,8 @@
 <include a CircleCI status badge, here>
 
+##CircleCI Pipeline status:
+[![<ORG_NAME>](https://circleci.com/gh/Phermann91/project-ml-microservice-kubernetes.svg?style=svg)](https://circleci.com/pipelines/gh/Phermann91/project-ml-microservice-kubernetes)
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -42,6 +45,3 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Run via kubectl
 
 
-
-# Pipeline status:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
