@@ -1,6 +1,4 @@
-<include a CircleCI status badge, here>
-
-##CircleCI Pipeline status:
+## CircleCI Pipeline status:
 [![<ORG_NAME>](https://circleci.com/gh/Phermann91/project-ml-microservice-kubernetes.svg?style=svg)](https://circleci.com/pipelines/gh/Phermann91/project-ml-microservice-kubernetes)
 
 ## Project Overview
